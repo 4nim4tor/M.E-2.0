@@ -1,0 +1,37 @@
+body {
+  min-height: 100svh;
+  background-color: black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+}
+
+.linkdiv {
+  width: 600px;
+  height: 500px;
+  border: solid 1px black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  background-image: url(./images/eclipse.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+a {
+  color: goldenrod;
+  text-align: center;
+  align-items: center;
+  text-decoration: solid;
+}
