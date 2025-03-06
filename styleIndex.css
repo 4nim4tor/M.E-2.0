@@ -1,12 +1,27 @@
 body {
   min-height: 100svh;
   background-color: black;
+  font-family: "Genos", serif;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  text-align: center;
+  color: hsla(var(--prim-gold));
+  font-size: 3.5rem;
+  font-family: "Genos", serif;
+}
+
+.genos-mainFont {
+  font-family: "Genos", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .container {
@@ -34,4 +49,21 @@ a {
   text-align: center;
   align-items: center;
   text-decoration: solid;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
 }

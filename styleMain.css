@@ -22,7 +22,7 @@ img {
 h1 {
   text-align: center;
   color: hsla(var(--prim-gold));
-  size: 700px;
+  font-size: 2.4rem;
   margin-top: 100px;
 }
 
@@ -42,6 +42,7 @@ ul {
 li a {
   display: block;
   text-align: center;
+  text-decoration: none;
   color: hsla(var(--prim-gold));
   margin-right: 25px;
 }
