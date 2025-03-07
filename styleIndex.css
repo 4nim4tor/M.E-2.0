@@ -1,7 +1,12 @@
+:root {
+  --prim-black: 0, 0%, 0%;
+  --prim-white: 0, 0%, 100%;
+  --prim-gold: 51, 100%, 50%;
+}
+
 body {
   min-height: 100svh;
-  background-color: black;
-  font-family: "Genos", serif;
+  background-color: hsla(var(--prim-black));
 }
 
 img {
@@ -24,16 +29,14 @@ h1 {
   font-style: normal;
 }
 
-.container {
+.box {
   position: relative;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: larger;
 }
 
 .linkdiv {
   width: 600px;
   height: 500px;
-  border: solid 1px black;
+  border: solid 1px hsla(var(--prim-black));
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -45,7 +48,7 @@ h1 {
 }
 
 a {
-  color: goldenrod;
+  color: hsla(var(--prim-gold));
   text-align: center;
   align-items: center;
   text-decoration: solid;
